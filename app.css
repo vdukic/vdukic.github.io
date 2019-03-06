@@ -14,8 +14,12 @@ header {
     
 }
 
-.cl-skills-holder{
-    height: 190px;
+.cl-skills-holder {
+    height: 290px;
+}
+
+.cl-projects-holder {
+    height: 920px;
 }
 
 .header-content {
@@ -228,7 +232,7 @@ div.tab button {
 
 /* Change background color of buttons on hover */
 div.tab button:hover {
-    color: #4fc3f7;
+    color: #32d8f7;
 }
 
 /* Create an active/current tablink class */
@@ -245,6 +249,20 @@ div.tab button.active {
     display: none;
     padding: 6px 17px;
     border-top: none;
+}
+
+.tabcontentProject {
+    padding: 6px 17px;
+}
+
+.tabcontentProject img:hover {
+    cursor: pointer;
+}
+
+.tabcontentProject img {
+    height: 200px;
+    margin-top: 10px;
+    width: 620px;
 }
 
 .skill-percentage {
@@ -272,7 +290,7 @@ div.tab button.active {
 }
 
 .skill-percentage:nth-child(1)::before {
-    width: 90%;
+    width: 95%;
     animation: skill_1 0.6s;
 }
 
@@ -282,7 +300,7 @@ div.tab button.active {
 }
 
 .skill-percentage:nth-child(3)::before {
-    width: 80%;
+    width: 90%;
     animation: skill_3 0.6s;
 }
 
@@ -291,12 +309,17 @@ div.tab button.active {
     animation: skill_4 0.6s;
 }
 
+.skill-percentage:nth-child(5)::before {
+    width: 85%;
+    animation: skill_5 0.6s;
+}
+
 @keyframes skill_1 {
     from {
         width: 0;
     }
     to {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -314,7 +337,7 @@ div.tab button.active {
         width: 0;
     }
     to {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -324,5 +347,14 @@ div.tab button.active {
     }
     to {
         width: 75%;
+    }
+}
+
+@keyframes skill_5 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 85%;
     }
 }
