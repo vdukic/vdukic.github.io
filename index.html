@@ -1,244 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="app.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curriculum Vitae</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vladimir Dukić - CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+      width: 30%;
+      background: #2f3e51;
+      color: white;
+      padding: 20px;
+    }
+    .sidebar img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .sidebar h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+    .sidebar p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+    .content {
+      width: 70%;
+      padding: 30px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 26px;
+    }
+    h3 {
+      color: #2f3e51;
+      margin-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
-<div class="resume-wrapper">
-    <article class="main-container">
-        <header>
-            <div class="header-content">
-                <div class="header-pic" title="Wiggle Wiggle">
-                    <div class="picture"></div>
-                </div>
-                <div class="header-text">
-                    <p>
-                        <span class="first-name">Vladimir Dukic</span>
-                    </p>
-                    <p class="subtitle">Software developer</p>
-                </div>
-            </div>
-        </header>
-        
-        <div class="content-wrapper">
-            
-            <!-- CONTACT -->
-            <section class="content">
-                <div class="row">
-                    <div class="content-left">
-                        Contact
-                    </div>
-                    <div class="content-text">
-                        <ul>
-                            <li>Email</li>
-                            <li>vdukic1586@gmail.com</li>
-                        </ul>
-                        <ul>
-                            <li>Phone</li>
-                            <li>(+381) 601403335</li>
-                        </ul>
-                        <ul>
-                            <li>Date of birth</li>
-                            <li>May 01, 1986</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- LOCATION -->
-            <section class="content">
-                <div class="row">
-                    <div class="content-left">
-                        Location
-                    </div>
-                    <div class="content-text">
-                        <ul>
-                            <li>City</li>
-                            <li>Kragujevac</li>
-                        </ul>
-                        <ul>
-                            <li>State</li>
-                            <li>Serbia</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- PROFILES -->
-            <section class="content">
-                <div class="row">
-                    <div class="content-left">
-                        Profiles
-                    </div>
-                    <div class="content-text">
-                        <ul>
-                            <li>LinkedIn</li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/vladimir-dukic-14b5a2100/" target="_blank">@vladimirdukic</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>Github</li>
-                            <li>
-                                <a href="https://github.com/vdukic/vdukic.github.io" target="_blank">@vladimirdukic</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="content">
-                <div class="row">
-                    <div class="content-left">
-                        Work experience
-                        <p>2012- </p>
-                    </div>
-                    <div class="content-text">
-                        <ul>
-                            <li>
-                                <a class="heading-other firm" href="http://emisia.net/en" target="_blank">Emisia Consulting</a>
-                            </li>
-                            <li>
-                                UI Developer
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="content">
-                <div class="row">
-                    <div class="content-left">
-                        Education
-                        <p>2005-2011</p>
-                    </div>
-                    <div class="content-text">
-                        
-                        <ul>
-                            <li>
-                                Kragujevac University
-                            </li>
-                            <li>
-                                Faculty of science (Bachelor)
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="content">
-                <div class="row">
-                    <div class="content-left">
-                        Other
-                    </div>
-                    <div class="content-text">
-                        <ul>
-                            <li>
-                                Foreign Languages
-                            </li>
-                            <li>
-                                English
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="content">
-                <div class="row cl-skills-holder">
-                    <div class="content-left">
-                        Programmer skills
-                    </div>
-                    <div class="content-text">
-                        <div class="tab">
-                            <button id="firstButton" class="tablinks" onclick="openSkill(event, 'javaScript')">JavaScript</button>
-                            <button class="tablinks" onclick="openSkill(event, 'CSS')">CSS</button>
-                            <button class="tablinks" onclick="openSkill(event, 'sourceControl')">Source Control</button>
-                            <button class="tablinks" onclick="openSkill(event, 'other')">Other</button>
-                        </div>
-                        
-                        <div id="javaScript" class="tabcontent">
-                            <p class="skill-percentage">ExtJs</p>
-                            <p class="skill-percentage">jQuery</p>
-                            <p class="skill-percentage">Angular</p>
-                            <p class="skill-percentage">Vue.js</p>
-                            <p class="skill-percentage">React</p>
-                        </div>
-                        
-                        <div id="CSS" class="tabcontent">
-                            <p>SASS</p>
-                            <p>SCSS</p>
-                        </div>
-                        
-                        <div id="sourceControl" class="tabcontent">
-                            <p>SVN</p>
-                            <p>Git</p>
-                        </div>
-                        
-                        <div id="other" class="tabcontent row">
-                            <div class="column">
-                                <p>HTML5</p>
-                                <p>Bootstrap</p>
-                                <p>Npm</p>
-                            </div>
-                            <div class="column secondColumn">
-                                <p>Trello</p>
-                                <p>Jira</p>
-                                <p>Postman</p>
-                            </div>
-                            <div class="column secondColumn">
-                                <p>Basecamp</p>
-                                <p>Pusher</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section class="content">
-                <div class="row cl-projects-holder">
-                    <div class="content-left">
-                        Projects
-                    </div>
-                    <div class="content-text">
-                        <div class="tab">
-                            <button id="firstProject"  class="tablinksProject" onclick="openProject(event, 'transporter')">Transporter</button>
-                            <button class="tablinksProject" onclick="openProject(event, 'cooler')">Cooler</button>
-                            <!--<button class="tablinksProject" onclick="openProject(event, 'musicVoice')">Music Voice</button>-->
-                        </div>
-    
-                        <div id="cooler" class="tabcontentProject">
-                            <img src="./assets/cooler/1.png" alt="" onclick="window.open(this.src)">
-                            <img src="./assets/cooler/2.png" alt="" onclick="window.open(this.src)">
-                            <img src="./assets/cooler/3.png" alt="" onclick="window.open(this.src)">
-                            <img src="./assets/cooler/4.png" alt="" onclick="window.open(this.src)">
-                        </div>
-    
-                        <!--<div id="musicVoice" class="tabcontentProject">-->
-                            <!--<img src="./assets/musicVoice/1.png" alt="">-->
-                            <!--<img src="./assets/musicVoice/2.png" alt="">-->
-                            <!--<img src="./assets/musicVoice/3.png" alt="">-->
-                            <!--<img src="./assets/musicVoice/4.png" alt="">-->
-                        <!--</div>-->
-    
-                        <div id="transporter" class="tabcontentProject">
-                            <img src="./assets/transporter/1.png" alt="" onclick="window.open(this.src)">
-                            <img src="./assets/transporter/2.png" alt="" onclick="window.open(this.src)">
-                            <img src="./assets/transporter/3.png" alt="" onclick="window.open(this.src)">
-                            <img src="./assets/transporter/4.png" alt="" onclick="window.open(this.src)">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        
-        </div>
-    
-    </article>
-</div>
-<script src="app.js"></script>
+  <div class="container">
+    <div class="sidebar">
+      <img src="https://via.placeholder.com/100" alt="Profile photo" />
+      <h2>Vladimir Dukić</h2>
+      <p>UI Software Manager</p>
+      <hr />
+      <h3>Contact</h3>
+      <p>Phone: +381 60 140 3335<br />
+         Email: vdukic1586@gmail.com<br />
+         LinkedIn:<br />
+         linkedin.com/in/vladimir-dukic-14b5a2100/<br />
+         Birth Date: May 1, 1986</p>
+      <h3>Skills</h3>
+      <ul>
+        <li>Angular 2+, ReactJS, ExtJS</li>
+        <li>React Native</li>
+        <li>CSS, HTML, TypeScript</li>
+        <li>Jest, Cypress</li>
+        <li>Linux, Git/Subversion</li>
+        <li>Figma</li>
+      </ul>
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Leadership</li>
+        <li>Teamwork</li>
+        <li>Adaptability</li>
+        <li>Problem solving</li>
+      </ul>
+    </div>
+    <div class="content">
+      <h1>Profile</h1>
+      <p>Experienced Senior Software Engineer with a strong background in the translation and localization industry. Proficient in Angular, ReactJS, and ExtJS. Holds a Bachelor's degree in Mathematics and Computer Science from the University of Kragujevac. Demonstrates leadership, problem-solving, and a proactive approach to team and project management.</p>
+      <div class="section">
+        <h3>Education</h3>
+        <p><strong>University of Kragujevac</strong><br />
+        Faculty of Science - Mathematics and Informatics (2005 – 2011)</p>
+        <p><strong>Gymnasium "Miloš Savković", Arandjelovac</strong><br />
+        High School (2001 – 2005)</p>
+      </div>
+      <div class="section">
+        <h3>Work Experience</h3>
+        <p><strong>TPT Serbia (TransPerfect)</strong><br />
+        Senior Software Developer/Manager (2019 – Present)</p>
+        <ul>
+          <li>Lead a team of 6 developers, performing code reviews</li>
+          <li>Manage application release processes and decision making</li>
+          <li>Team lead for web (React, ExtJS) and mobile (Sencha Touch) apps</li>
+          <li>Develop features and write tests (Jest, Cypress)</li>
+          <li>Present application changes to sales team</li>
+          <li>Work on app authorization (OAuth)</li>
+        </ul>
+        <p><strong>Emisia Consulting DOO, Kragujevac</strong><br />
+        UI Developer (2012 – 2019)</p>
+        <ul>
+          <li>Developed UI features using ExtJS, CSS, HTML</li>
+          <li>Fixed bugs and improved UI quality</li>
+          <li>Participated in sprint planning meetings</li>
+        </ul>
+        <p><strong>Elementary School "Sestre Pavlović", Belanovica</strong><br />
+        Mathematics Teacher (2011 – 2012)</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
-
